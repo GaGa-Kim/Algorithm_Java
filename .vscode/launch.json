@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "동전_0",
+            "request": "launch",
+            "mainClass": "그리디.동전_0",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "_2xn_타일링",
+            "request": "launch",
+            "mainClass": "동적계획법._2xn_타일링",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "디버깅_오류",
+            "request": "launch",
+            "mainClass": "디버깅_오류",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "이분_그래프",
+            "request": "launch",
+            "mainClass": "이분_그래프",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "소수_구하기",
+            "request": "launch",
+            "mainClass": "정수론.소수.소수_구하기",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "이항_계수_1",
+            "request": "launch",
+            "mainClass": "조합.이항_계수_1",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "줄_세우기",
+            "request": "launch",
+            "mainClass": "줄_세우기",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "집합의_표현",
+            "request": "launch",
+            "mainClass": "집합의_표현",
+            "projectName": "Algorithm_Java_e4ceb431"
+        }
+    ]
+}
