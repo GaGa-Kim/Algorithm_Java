@@ -1,3 +1,5 @@
+package Do_it;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +8,7 @@ import java.util.StringTokenizer;
 /**
  * 11659) 구간_합_구하기_4
  */
-public class 구간_합_구하기_4 {
+public class D3_11659 {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());

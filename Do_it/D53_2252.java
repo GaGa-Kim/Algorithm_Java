@@ -1,3 +1,5 @@
+package Do_it;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -6,7 +8,7 @@ import java.util.Scanner;
 /**
  * 2252) 줄_세우기
  */
-public class 줄_세우기 {
+public class D53_2252 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // N(학생 수)

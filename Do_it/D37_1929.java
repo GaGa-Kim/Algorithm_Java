@@ -1,11 +1,11 @@
-package 정수론.소수;
+package Do_it;
 
 import java.util.Scanner;
 
 /**
  * 1929) 소수_구하기
  */
-public class 소수_구하기 {
+public class D37_1929 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // M(시작 수) N(종료 수)

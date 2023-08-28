@@ -1,11 +1,11 @@
-package 동적계획법;
+package Do_it;
 
 import java.util.Scanner;
 
 /**
  * 11726) 2xn_타일링
  */
-public class _2xn_타일링 {
+public class D87_11726 {
     static long mod = 10007;
 
     public static void main(String[] args) {

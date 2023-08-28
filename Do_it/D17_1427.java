@@ -1,9 +1,11 @@
+package Do_it;
+
 import java.util.Scanner;
 
 /**
  * 1427) 소트인사이드
  */
-public class 소트인사이드 {
+public class D17_1427 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // str(정렬할 수)

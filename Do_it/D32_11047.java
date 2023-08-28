@@ -1,11 +1,11 @@
-package 그리디;
+package Do_it;
 
 import java.util.Scanner;
 
 /**
  * 11047) 동전_0
  */
-public class 동전_0 {
+public class D32_11047 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // N(동전 개수) K(목표 금액)

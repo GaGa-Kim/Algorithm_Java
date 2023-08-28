@@ -1,3 +1,5 @@
+package Do_it;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +8,7 @@ import java.util.ArrayList;
 /**
  * 1707) 이분_그래프
  */
-public class 이분_그래프 {
+public class D48_1707 {
     static ArrayList<Integer>[] A;
     static int[] check;
     static boolean[] visited;

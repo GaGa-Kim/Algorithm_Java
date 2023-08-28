@@ -1,3 +1,5 @@
+package Do_it;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,7 +10,7 @@ import java.util.StringTokenizer;
 /**
  * 2178) 미로_탐색
  */
-public class 미로_탐색 {
+public class D27_2178 {
     // dx, dy (상하좌우를 탐색하기 위한 define값 정의 변수)
     static int[] dx = { 0, 1, 0, -1 };
     static int[] dy = { 1, 0, -1, 0 };

@@ -1,3 +1,5 @@
+package Do_it;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +8,7 @@ import java.util.StringTokenizer;
 /**
  * 12891) DNA_비밀번호
  */
-public class DNA_비밀번호 {
+public class D9_12891 {
     static int checkArr[];
     static int myArr[];
     static int checkSecret;

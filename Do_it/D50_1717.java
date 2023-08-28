@@ -1,9 +1,11 @@
+package Do_it;
+
 import java.util.Scanner;
 
 /**
  * 1717) 집합의_표현
  */
-public class 집합의_표현 {
+public class D50_1717 {
     public static int[] parent;
 
     public static void main(String[] args) {
