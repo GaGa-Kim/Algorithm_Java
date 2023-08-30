@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * 1707) 이분_그래프
  */
-public class D48_1707 {
+public class D048_1707 {
     static ArrayList<Integer>[] A;
     static int[] check;
     static boolean[] visited;

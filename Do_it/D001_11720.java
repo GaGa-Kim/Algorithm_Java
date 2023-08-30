@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 11720) 숫자의_합
  */
-public class D1_11720 {
+public class D001_11720 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // N값 입력받기

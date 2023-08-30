@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 2750) 수_정렬하기
  */
-public class D15_2750 {
+public class D015_2750 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // N(정렬할 수 개수)

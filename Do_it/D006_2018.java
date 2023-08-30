@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 2018) 수들의_합_5
  */
-public class D6_2018 {
+public class D006_2018 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // N 변수 저장

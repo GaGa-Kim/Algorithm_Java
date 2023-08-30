@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 /**
  * 11724) 연결_요소의_개수
  */
-public class D23_11724 {
+public class D023_11724 {
     static ArrayList<Integer>[] A;
     static boolean visited[];
 

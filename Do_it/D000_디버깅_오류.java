@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 디버깅_오류
  */
-public class D0_디버깅_오류 {
+public class D000_디버깅_오류 {
     public static void main(String[] args) {
         // TODO: 배열에서 주어진 범위의 합을 구하는 프로그램을 구하시오.
         Scanner sc = new Scanner(System.in);

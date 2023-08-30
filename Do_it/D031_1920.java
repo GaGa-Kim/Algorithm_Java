@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * 1920) 수_찾기
  */
-public class D31_1920 {
+public class D031_1920 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // N(정렬할 수 개수)

@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * 1874) 스택_수열
  */
-public class D11_1874 {
+public class D011_1874 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // N(수열 개수)

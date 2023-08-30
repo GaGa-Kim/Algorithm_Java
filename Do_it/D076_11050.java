@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 11050) 이항_계수_1
  */
-public class D76_11050 {
+public class D076_11050 {
     static int N, K;
     static int[][] D;
 

@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * 2164) 카드_2
  */
-public class D13_2164 {
+public class D013_2164 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // N(카드의 개수)

@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 /**
  * 12891) DNA_비밀번호
  */
-public class D9_12891 {
+public class D009_12891 {
     static int checkArr[];
     static int myArr[];
     static int checkSecret;
