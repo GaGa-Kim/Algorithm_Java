@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "D019_11004",
+            "request": "launch",
+            "mainClass": "Do_it.D019_11004",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "D018_11399",
+            "request": "launch",
+            "mainClass": "Do_it.D018_11399",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
             "name": "D011_1874",
             "request": "launch",
             "mainClass": "Do_it.D011_1874",
