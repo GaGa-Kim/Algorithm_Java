@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * 11004) K번째 수
+ * 11004) K번째_수
  */
 public class D019_11004 {
     public static void main(String[] args) throws IOException {
