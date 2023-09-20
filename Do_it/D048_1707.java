@@ -26,7 +26,7 @@ public class D048_1707 {
             int E = Integer.parseInt(s[1]);
             // A(그래프 데이터 저장 인접 리스트)
             A = new ArrayList[V + 1];
-            // isited(방문 기록 저장 배열)
+            // visited(방문 기록 저장 배열)
             visited = new boolean[V + 1];
             // check(이분 그래프 체크 배열)
             check = new int[V + 1];
