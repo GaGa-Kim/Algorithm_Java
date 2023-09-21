@@ -1,4 +1,4 @@
-package Do_it;
+package Do_it.Do_it_03;
 
 import java.io.BufferedReader;
 import java.io.IOException;
