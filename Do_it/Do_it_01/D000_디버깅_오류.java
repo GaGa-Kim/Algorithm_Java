@@ -1,4 +1,4 @@
-package Do_it;
+package Do_it.Do_it_01;
 
 import java.util.Scanner;
 
