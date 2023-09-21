@@ -1,4 +1,4 @@
-package Do_it;
+package Do_it.Do_it_05;
 
 import java.util.Collections;
 import java.util.PriorityQueue;
