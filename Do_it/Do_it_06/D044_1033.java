@@ -1,4 +1,4 @@
-package Do_it;
+package Do_it.Do_it_06;
 
 import java.util.ArrayList;
 import java.util.Scanner;
