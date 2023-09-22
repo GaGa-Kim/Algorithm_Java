@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "D055_1948",
+            "request": "launch",
+            "mainClass": "Do_it.Do_it_07.D055_1948",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "D054_1516",
+            "request": "launch",
+            "mainClass": "Do_it.Do_it_07.D054_1516",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
             "name": "D000_디버깅_오류",
             "request": "launch",
             "mainClass": "D000_디버깅_오류",
