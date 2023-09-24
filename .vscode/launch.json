@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "D058_1854",
+            "request": "launch",
+            "mainClass": "Do_it.Do_it_07.D058_1854",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
             "name": "D057_1916",
             "request": "launch",
             "mainClass": "Do_it.Do_it_07.D057_1916",
