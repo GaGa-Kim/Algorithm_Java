@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "D066_1414",
+            "request": "launch",
+            "mainClass": "Do_it.Do_it_07.D066_1414",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "D065_17472",
+            "request": "launch",
+            "mainClass": "Do_it.Do_it_07.D065_17472",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
+            "name": "D064_1197",
+            "request": "launch",
+            "mainClass": "Do_it.Do_it_07.D064_1197",
+            "projectName": "Algorithm_Java_e4ceb431"
+        },
+        {
+            "type": "java",
             "name": "D062_11403",
             "request": "launch",
             "mainClass": "Do_it.Do_it_07.D062_11403",
