@@ -14,3 +14,5 @@
 | 동적계획법 | DP |
 | 깊이 우선 탐색 | DFS |
 | 너비 우선 탐색 | BFS |
+| 이분탐색 | BinarySearch |
+| 그래프 | Graph |
