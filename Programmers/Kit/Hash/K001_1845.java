@@ -1,4 +1,4 @@
-package Programmers.Kit.Heap;
+package Programmers.Kit.Hash;
 
 import java.util.HashSet;
 import java.util.Set;
