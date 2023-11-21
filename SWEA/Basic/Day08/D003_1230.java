@@ -51,7 +51,7 @@ public class D003_1230 {
                 else if (command.equals("A")) {
                     // y(추가 숫자 갯수 저장)
                     int y = sc.nextInt();
-                    // 암호문 추가 함수(x, y)
+                    // 암호문 추가 함수(y)
                     addPW(y);
                 }
             }
