@@ -1,11 +1,11 @@
-package Programmers.Kit.BinarySearch;
+package Programmers.Kit.BruteForce;
 
 import java.util.Arrays;
 
 /**
  * 42842) 카펫
  */
-public class K003_42842 {
+public class K004_42842 {
     // brown(갈색 격자의 수)
     // yellow(노란색 격자의 수)
     public int[] solution(int brown, int yellow) {
@@ -33,7 +33,7 @@ public class K003_42842 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        K003_42842 solution = new K003_42842();
+        K004_42842 solution = new K004_42842();
 
         int brown = 10;
         int yellow = 2;
