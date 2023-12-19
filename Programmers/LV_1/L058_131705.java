@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 131705) 삼총사
  */
-public class L020_131705 {
+public class L058_131705 {
     // answer(학생들 중 삼총사를 만들 수 있는 방법의 수)
     static int answer;
     // temp(세 명의 학생들의 번호를 가지는 임시 정수 배열)
@@ -44,7 +44,7 @@ public class L020_131705 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L020_131705 solution = new L020_131705();
+        L058_131705 solution = new L058_131705();
 
         int[] number = { -2, 3, 0, 2, -5 };
 

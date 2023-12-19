@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 155652) 둘만의_암호
  */
-public class L008_155652 {
+public class L070_155652 {
     // s(변환할 문자열)
     // skip(스킵할 문자열)
     // index(알파벳을 바꿔줄 인덱스)
@@ -33,7 +33,7 @@ public class L008_155652 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L008_155652 solution = new L008_155652();
+        L070_155652 solution = new L070_155652();
 
         String s = "aukks";
         String skip = "wbqd";

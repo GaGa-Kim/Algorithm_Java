@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 77484) 로또의_최고_순위와_최저_순위
  */
-public class L030_77484 {
+public class L048_77484 {
     // lottos(구매한 로또 번호를 담은 배열)
     // win_nums(당첨 번호를 담은 배열)
     public int[] solution(int[] lottos, int[] win_nums) {
@@ -44,7 +44,7 @@ public class L030_77484 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L030_77484 solution = new L030_77484();
+        L048_77484 solution = new L048_77484();
 
         int[] lottos = { 44, 1, 0, 0, 31, 25 };
         int[] win_nums = { 31, 10, 45, 1, 6, 19 };

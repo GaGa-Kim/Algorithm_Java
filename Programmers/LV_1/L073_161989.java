@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 161989) 덧칠하기
  */
-public class L005_161989 {
+public class L073_161989 {
 
     // n(페인트가 칠해질 수 있는 구역 갯수)
     // m(롤러의 길이)
@@ -28,7 +28,7 @@ public class L005_161989 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L005_161989 solution = new L005_161989();
+        L073_161989 solution = new L073_161989();
 
         int n = 8;
         int m = 4;

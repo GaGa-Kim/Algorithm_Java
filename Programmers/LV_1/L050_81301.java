@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 81301) 숫자_문자열과_영단어
  */
-public class L028_81301 {
+public class L050_81301 {
     // s(숫자의 일부 자릿수가 영단어로 바뀌어졌거나, 혹은 바뀌지 않고 그대로인 문자열)
     public int solution(String s) {
         // numbers(영단어 배열)
@@ -21,7 +21,7 @@ public class L028_81301 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L028_81301 solution = new L028_81301();
+        L050_81301 solution = new L050_81301();
 
         String s = "one4seveneight";
 

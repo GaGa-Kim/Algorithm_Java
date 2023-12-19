@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 136798) 기사단원의_무기
  */
-public class L014_136798 {
+public class L064_136798 {
     // number(기사단원의 수)
     // limit(공격력의 제한수치)
     // power(제한수치를 초과한 기사가 사용할 무기의 공격력)
@@ -32,7 +32,7 @@ public class L014_136798 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L014_136798 solution = new L014_136798();
+        L064_136798 solution = new L064_136798();
 
         int number = 5;
         int limit = 3;

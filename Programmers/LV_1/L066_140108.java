@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 140108) 문자열_나누기
  */
-public class L012_140108 {
+public class L066_140108 {
     // s(문자열)
     public int solution(String s) {
         // answer(분해한 문자열의 개수)
@@ -37,7 +37,7 @@ public class L012_140108 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L012_140108 solution = new L012_140108();
+        L066_140108 solution = new L066_140108();
 
         String s = "banana";
 

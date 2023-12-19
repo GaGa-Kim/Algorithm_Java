@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * 160586) 대충_만든_자판
  */
-public class L006_160586 {
+public class L072_160586 {
 
     // keymap(할당된 문자들이 순서대로 담긴 문자열 배열)
     // targets(입력하려는 문자열들이 담긴 문자열 배열)
@@ -52,7 +52,7 @@ public class L006_160586 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L006_160586 solution = new L006_160586();
+        L072_160586 solution = new L072_160586();
 
         String[] keymap = { "BC" };
         String[] targets = { "AC", "BC" };

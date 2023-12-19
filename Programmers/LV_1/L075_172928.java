@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 172928) 공원_산책
  */
-public class L003_172928 {
+public class L075_172928 {
 
     // park(공원을 나타내는 문자열 배열)
     // routes(로봇 강아지가 수행할 명령이 담긴 문자열 배열)
@@ -65,7 +65,7 @@ public class L003_172928 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L003_172928 solution = new L003_172928();
+        L075_172928 solution = new L075_172928();
 
         String[] park = { "SOO", "OXX", "OOO" };
         String[] routes = { "E 2", "S 2", "W 1" };

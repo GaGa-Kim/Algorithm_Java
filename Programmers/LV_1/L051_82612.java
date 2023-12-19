@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 82612) 부족한_금액_계산하기
  */
-public class L027_82612 {
+public class L051_82612 {
     // price(놀이기구의 이용료)
     // money(처음 가지고 있던 금액)
     // count(놀이기구의 이용 횟수)
@@ -24,7 +24,7 @@ public class L027_82612 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L027_82612 solution = new L027_82612();
+        L051_82612 solution = new L051_82612();
 
         int price = 3;
         int money = 20;

@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 118666) 성격_유형_검사하기
  */
-public class L022_118666 {
+public class L056_118666 {
     // survey(질문마다 판단하는 지표)
     // choices(검사자가 각 질문마다 선택한 선택지)
     public String solution(String[] survey, int[] choices) {
@@ -47,7 +47,7 @@ public class L022_118666 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L022_118666 solution = new L022_118666();
+        L056_118666 solution = new L056_118666();
 
         String[] survey = { "TR", "RT", "TR" };
         int[] choices = { 7, 1, 3 };

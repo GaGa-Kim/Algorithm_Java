@@ -9,7 +9,7 @@ import java.util.Set;
 /**
  * 92334) 신고_결과_받기
  */
-public class L023_92334 {
+public class L055_92334 {
     // id_list(이용자의 ID)
     // report(각 이용자가 신고한 이용자의 ID 정보)
     // k(정지 기준이 되는 신고 횟수)
@@ -53,7 +53,7 @@ public class L023_92334 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L023_92334 solution = new L023_92334();
+        L055_92334 solution = new L055_92334();
 
         String[] id_list = { "muzi", "frodo", "apeach", "neo" };
         String[] report = { "muzi frodo", "apeach frodo", "frodo neo", "muzi neo", "apeach muzi" };

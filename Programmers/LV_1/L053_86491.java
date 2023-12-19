@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 86491) 최소직사각형
  */
-public class L025_86491 {
+public class L053_86491 {
     // sizes(모든 명함의 가로 길이와 세로 길이)
     public int solution(int[][] sizes) {
         // width(최대 가로 길이)
@@ -26,7 +26,7 @@ public class L025_86491 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L025_86491 solution = new L025_86491();
+        L053_86491 solution = new L053_86491();
 
         int[][] sizes = { { 60, 50 }, { 30, 70 }, { 60, 30 }, { 80, 40 } };
 

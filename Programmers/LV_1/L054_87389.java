@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 87389) 나머지가_1이_되는_수_찾기
  */
-public class L024_87389 {
+public class L054_87389 {
     // n(자연수)
     public int solution(int n) {
         // answer(나머지가 1이 되도록 하는 가장 작은 자연수)
@@ -22,7 +22,7 @@ public class L024_87389 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L024_87389 solution = new L024_87389();
+        L054_87389 solution = new L054_87389();
 
         int n = 10;
 

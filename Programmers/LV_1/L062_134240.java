@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 134240) 푸드_파이트_대회
  */
-public class L016_134240 {
+public class L062_134240 {
     // food(준비한 음식의 양을 칼로리가 적은 순서대로 나타내는 정수 배열)
     public String solution(int[] food) {
         // answer(대회를 위한 음식의 배치를 나타내는 문자열)
@@ -32,7 +32,7 @@ public class L016_134240 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L016_134240 solution = new L016_134240();
+        L062_134240 solution = new L062_134240();
 
         int[] food = { 1, 7, 1, 2 };
 

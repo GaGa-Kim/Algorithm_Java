@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * 178871) 달리기_경주
  */
-public class L001_178871 {
+public class L077_178871 {
 
     // players(선수들의 이름과 현재 등수)
     // callings(해설진이 부른 이름)
@@ -44,7 +44,7 @@ public class L001_178871 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L001_178871 solution = new L001_178871();
+        L077_178871 solution = new L077_178871();
 
         String[] players = { "mumu", "soe", "poe", "kai", "mine" };
         String[] callings = { "kai", "kai", "mine", "mine" };

@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 133499) 옹알이_(2)
  */
-public class L018_133499 {
+public class L060_133499 {
     // babbling(문자열 배열)
     public int solution(String[] babbling) {
         // answer(발음할 수 있는 단어의 개수)
@@ -34,7 +34,7 @@ public class L018_133499 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L018_133499 solution = new L018_133499();
+        L060_133499 solution = new L060_133499();
 
         String[] babbling = { "aya", "yee", "u", "maa" };
 

@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 132267) 콜라_문제
  */
-public class L019_132267 {
+public class L059_132267 {
     // a(콜라를 받기 위해 마트에 주어야 하는 병 수)
     // b(빈 병 a개를 가져다 주면 마트가 주는 콜라의 병 수)
     // n(상빈이가 가지고 있는 빈 병의 개수)
@@ -27,7 +27,7 @@ public class L019_132267 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L019_132267 solution = new L019_132267();
+        L059_132267 solution = new L059_132267();
 
         int a = 3;
         int b = 1;

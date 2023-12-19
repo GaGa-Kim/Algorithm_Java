@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 147355) 크기가_작은_부분문자열
  */
-public class L010_147355 {
+public class L068_147355 {
     // t(숫자로 이루어진 문자열)
     // p(숫자로 이루어진 문자열)
     public int solution(String t, String p) {
@@ -22,7 +22,7 @@ public class L010_147355 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L010_147355 solution = new L010_147355();
+        L068_147355 solution = new L068_147355();
 
         String t = "3141592";
         String p = "271";

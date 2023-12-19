@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 131128) 숫자_짝꿍
  */
-public class L021_131128 {
+public class L057_131128 {
     // X, Y(짝꿍을 찾을 두 정수)
     public String solution(String X, String Y) {
         // yMap(Y의 값을 저장할 HashMap)
@@ -56,7 +56,7 @@ public class L021_131128 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L021_131128 solution = new L021_131128();
+        L057_131128 solution = new L057_131128();
 
         String X = "5525";
         String Y = "1255";

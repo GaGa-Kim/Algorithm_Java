@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 77884) 약수의_개수와_덧셈
  */
-public class L029_77884 {
+public class L049_77884 {
     // left, right(두 정수)
     public int solution(int left, int right) {
         // answer(수의 개수가 짝수인 수는 더하고, 약수의 개수가 홀수인 수는 뺀 수)
@@ -31,7 +31,7 @@ public class L029_77884 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L029_77884 solution = new L029_77884();
+        L049_77884 solution = new L049_77884();
 
         int left = 13;
         int right = 17;

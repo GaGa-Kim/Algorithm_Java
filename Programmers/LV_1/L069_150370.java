@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 150370) 개인정보_수집_유효기간
  */
-public class L009_150370 {
+public class L069_150370 {
     // today(오늘 날짜 의미 문자열)
     // terms(약관의 유효기간을 담은 1차원 문자열 배열)
     // privacies(수집된 개인정보의 정보를 담은 1차원 문자열 배열)
@@ -43,7 +43,7 @@ public class L009_150370 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L009_150370 solution = new L009_150370();
+        L069_150370 solution = new L069_150370();
 
         String today = "2022.05.19";
         String[] terms = { "A 6", "B 12", "C 3" };

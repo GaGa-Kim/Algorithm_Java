@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * 133502) 햄버거_만들기
  */
-public class L017_133502 {
+public class L061_133502 {
     // ingredient(재료의 정보를 나타내는 정수 배열)
     public int solution(int[] ingredient) {
         // answer(햄버거의 개수)
@@ -39,7 +39,7 @@ public class L017_133502 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L017_133502 solution = new L017_133502();
+        L061_133502 solution = new L061_133502();
 
         int[] ingredient = { 2, 1, 1, 2, 3, 1, 2, 3, 1 };
 

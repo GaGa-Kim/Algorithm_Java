@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 159994) 카드_뭉치
  */
-public class L007_159994 {
+public class L071_159994 {
     // cards1(문자열로 이루어진 배열1)
     // cards2(문자열로 이루어진 배열2)
     // goal(원하는 단어 배열)
@@ -35,7 +35,7 @@ public class L007_159994 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L007_159994 solution = new L007_159994();
+        L071_159994 solution = new L071_159994();
 
         String[] cards1 = { "i", "drink", "water" };
         String[] cards2 = { "want", "to" };

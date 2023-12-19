@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 161990) 바탕화면_정리
  */
-public class L004_161990 {
+public class L074_161990 {
 
     // wallpaper(바탕화면의 칸의 상태를 나타내는 문자열 배열)
     public int[] solution(String[] wallpaper) {
@@ -37,7 +37,7 @@ public class L004_161990 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L004_161990 solution = new L004_161990();
+        L074_161990 solution = new L074_161990();
 
         String[] wallpaper = { ".#...", "..#..", "...#." };
 

@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * 142086) 가장_가까운_같은_글자
  */
-public class L011_142086 {
+public class L067_142086 {
     // s(문자열)
     public int[] solution(String s) {
         // map(문자와 인덱스를 담은 hashMap)
@@ -34,7 +34,7 @@ public class L011_142086 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L011_142086 solution = new L011_142086();
+        L067_142086 solution = new L067_142086();
 
         String s = "banana";
 

@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 135808) 과일_장수
  */
-public class L015_135808 {
+public class L063_135808 {
     // k(사과의 최대 점수)
     // m(한 상자에 들어가는 사과의 수)
     // score(사과들의 점수)
@@ -24,7 +24,7 @@ public class L015_135808 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L015_135808 solution = new L015_135808();
+        L063_135808 solution = new L063_135808();
 
         int k = 3;
         int m = 4;

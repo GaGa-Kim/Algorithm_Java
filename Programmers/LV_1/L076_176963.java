@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * 176963) 추억_점수
  */
-public class L002_176963 {
+public class L076_176963 {
 
     // name(그리워하는 사람의 이름을 담은 문자열 배열)
     // yearning(각 사람별 그리움 점수를 담은 정수 배열)
@@ -36,7 +36,7 @@ public class L002_176963 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L002_176963 solution = new L002_176963();
+        L076_176963 solution = new L076_176963();
 
         String[] name = { "may", "kein", "kain", "radi" };
         int[] yearning = { 5, 10, 1, 3 };

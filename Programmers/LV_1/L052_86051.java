@@ -3,7 +3,7 @@ package Programmers.LV_1;
 /**
  * 86051) 없는_숫자_더하기
  */
-public class L026_86051 {
+public class L052_86051 {
     // numbers(0부터 9까지의 숫자 중 일부가 들어있는 정수 배열)
     public int solution(int[] numbers) {
         // answer(찾을 수 없는 0부터 9까지의 숫자의 합)
@@ -25,7 +25,7 @@ public class L026_86051 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L026_86051 solution = new L026_86051();
+        L052_86051 solution = new L052_86051();
 
         int[] numbers = { 1, 2, 3, 4, 6, 7, 8, 0 };
 
