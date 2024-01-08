@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 12941) 최솟값_만들기
  */
-public class L008_12941 {
+public class L016_12941 {
     // A, B(길이가 같은 배열)
     public int solution(int[] A, int[] B) {
         // answer(누적된 최솟값)
@@ -23,7 +23,7 @@ public class L008_12941 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L008_12941 solution = new L008_12941();
+        L016_12941 solution = new L016_12941();
 
         int[] A = { 1, 4, 2 };
         int[] B = { 5, 4, 4 };

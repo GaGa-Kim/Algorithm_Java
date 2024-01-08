@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * 12923) 숫자_블록
  */
-public class L004_12923 {
+public class L012_12923 {
     // begin, end(구간을 나타내는 두 정수)
     public int[] solution(long begin, long end) {
         // answer(구간에 깔려 있는 블록의 숫자 배열)
@@ -50,7 +50,7 @@ public class L004_12923 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L004_12923 solution = new L004_12923();
+        L012_12923 solution = new L012_12923();
 
         long begin = 1;
         long end = 10;

@@ -3,7 +3,7 @@ package Programmers.LV_2;
 /**
  * 12914) 멀리_뛰기
  */
-public class L003_12914 {
+public class L011_12914 {
     // n(멀리뛰기에 사용될 칸의 수)
     public long solution(int n) {
         // D(i번째 칸에 도달할 수 있는 경우의 수)
@@ -20,7 +20,7 @@ public class L003_12914 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L003_12914 solution = new L003_12914();
+        L011_12914 solution = new L011_12914();
 
         int n = 4;
 

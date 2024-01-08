@@ -3,7 +3,7 @@ package Programmers.LV_2;
 /**
  * 12911) 다음_큰_숫자
  */
-public class L001_12911 {
+public class L009_12911 {
     // n(자연수)
     public int solution(int n) {
         // answer(조건을 만족하는 수 중 가장 작은 수)
@@ -40,7 +40,7 @@ public class L001_12911 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L001_12911 solution = new L001_12911();
+        L009_12911 solution = new L009_12911();
 
         int n = 78;
 

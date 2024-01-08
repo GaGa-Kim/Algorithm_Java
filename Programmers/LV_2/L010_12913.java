@@ -3,7 +3,7 @@ package Programmers.LV_2;
 /**
  * 12913) 땅따먹기
  */
-public class L002_12913 {
+public class L010_12913 {
     // land(땅따먹기 게임의 땅)
     int solution(int[][] land) {
         // answer(마지막 행까지 모두 내려왔을 때, 얻을 수 있는 점수의 최대값)
@@ -25,7 +25,7 @@ public class L002_12913 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L002_12913 solution = new L002_12913();
+        L010_12913 solution = new L010_12913();
 
         int[][] land = { { 1, 2, 3, 5 },
                 { 5, 6, 7, 8 },

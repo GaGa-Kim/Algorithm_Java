@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 12946) 하노이의_탑
  */
-public class L010_12946 {
+public class L018_12946 {
     // list(이동한 방법들 리스트)
     static List<int[]> list = new ArrayList<>();
 
@@ -43,7 +43,7 @@ public class L010_12946 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L010_12946 solution = new L010_12946();
+        L018_12946 solution = new L018_12946();
 
         int n = 2;
 

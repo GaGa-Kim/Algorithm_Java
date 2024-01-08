@@ -3,7 +3,7 @@ package Programmers.LV_2;
 /**
  * 12924) 숫자의_표현
  */
-public class L005_12924 {
+public class L013_12924 {
     // n(자연수)
     public int solution(int n) {
         // answer(연속된 자연수들로 n을 표현하는 방법의 수)
@@ -42,7 +42,7 @@ public class L005_12924 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L005_12924 solution = new L005_12924();
+        L013_12924 solution = new L013_12924();
 
         int n = 15;
 

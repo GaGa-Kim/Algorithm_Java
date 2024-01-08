@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 12936) 줄_서는_방법
  */
-public class L006_12936 {
+public class L014_12936 {
     // n(사람의 수)
     // k(자연수)
     public int[] solution(int n, long k) {
@@ -44,7 +44,7 @@ public class L006_12936 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L006_12936 solution = new L006_12936();
+        L014_12936 solution = new L014_12936();
 
         int n = 3;
         long k = 5;

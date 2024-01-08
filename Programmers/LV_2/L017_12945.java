@@ -3,7 +3,7 @@ package Programmers.LV_2;
 /**
  * 12945) 피보나치_수
  */
-public class L009_12945 {
+public class L017_12945 {
     // n(2 이상의 자연수)
     public int solution(int n) {
         // answer(n번째 피보나치 수를 1234567으로 나눈 나머지 값)
@@ -26,7 +26,7 @@ public class L009_12945 {
 
     // 테스트 케이스
     public static void main(String[] args) {
-        L009_12945 solution = new L009_12945();
+        L017_12945 solution = new L017_12945();
 
         int n = 3;
 
