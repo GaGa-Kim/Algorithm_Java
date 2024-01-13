@@ -7,7 +7,9 @@ import java.util.Map;
  * 17677) 뉴스_클러스터링
  */
 public class L028_17677 {
+    // intersection(교집합의 크기)
     static int intersection;
+    // union(합집합의 크기)
     static int union;
 
     // str1, str2(자카드 유사도를 계산할 문자열)
@@ -25,9 +27,8 @@ public class L028_17677 {
         Map<String, Integer> b = new HashMap<>();
         // 다중집합 b의 원소 저장하기
         addElements(b, str2);
-        // intersection(교집합의 크기)
+        // 합집합과 교집합의 개수 초기화
         intersection = 0;
-        // union(합집합의 크기)
         union = 0;
         // 교집합과 합집합 계산하기
         calculate(a, b);
