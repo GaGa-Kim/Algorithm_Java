@@ -14,7 +14,7 @@ public class L028_17677 {
 
     // str1, str2(자카드 유사도를 계산할 문자열)
     public int solution(String str1, String str2) {
-        // answer(두 문자열 사이의 자카드 유사)
+        // answer(두 문자열 사이의 자카드 유사도)
         double answer;
         // str1, str2를 소문자로 변환
         str1 = str1.toLowerCase();
