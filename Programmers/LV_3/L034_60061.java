@@ -33,16 +33,9 @@ public class L034_60061 {
             }
             // 구조물을 설치하는 경우
             if (b == 1) {
-                if (a == 0) {
-                    // 규칙에 맞는 경우 기둥 생성
-                    if (isMakeColumn(maps, x, y)) {
-                        maps.add(new Frame(x, y, a));
-                    }
-                } else {
-                    // 규칙에 맞는 경우 보 생성
-                    if (isMakeBeam(maps, x, y)) {
-                        maps.add(new Frame(x, y, a));
-                    }
+                // 규칙에 맞는 경우 기둥 또는 보 생성
+                if ((a == 0 && canBuildColumn(maps, x, y)) || (a == 1 && canBuildBeam(maps, x, y))) {
+                    maps.add(new Frame(x, y, a));
                 }
                 // 만약 규칙에 맞지 않는다면 연산을 무시
             }
@@ -77,24 +70,20 @@ public class L034_60061 {
         // 모든 구조물의 규칙을 확인
         for (Frame map : maps) {
             // 구조물이 기둥인 경우
-            if (map.a == 0) {
-                if (!isMakeColumn(maps, map.x, map.y)) {
-                    return false;
-                }
+            if (map.a == 0 && !canBuildColumn(maps, map.x, map.y)) {
+                return false;
             }
             // 구조물이 보인 경우
-            else if (map.a == 1) {
-                if (!isMakeBeam(maps, map.x, map.y)) {
-                    return false;
-                }
+            else if (map.a == 1 && !canBuildBeam(maps, map.x, map.y)) {
+                return false;
             }
         }
         // 규칙에 맞으므로 true 반환
         return true;
     }
 
-    // 현재 설치된 기둥이 규칙에 맞는지 확인하는 함수
-    private boolean isMakeColumn(List<Frame> maps, int x, int y) {
+    // 설치된/설치될 기둥이 규칙에 맞는지 확인하는 함수
+    private boolean canBuildColumn(List<Frame> maps, int x, int y) {
         // 바닥 위에 있거나 보의 한쪽 끝 부분 위에 있거나, 또는 다른 기둥 위에 있는 경우 중 하나라면 정상
         if (y == 0
                 || maps.contains(new Frame(x - 1, y, 1))
@@ -107,8 +96,8 @@ public class L034_60061 {
         return false;
     }
 
-    // 현재 설치된 보가 규칙에 맞는지 확인하는 함수
-    private boolean isMakeBeam(List<Frame> maps, int x, int y) {
+    // 설치된/설치될 보가 규칙에 맞는지 확인하는 함수
+    private boolean canBuildBeam(List<Frame> maps, int x, int y) {
         // 한쪽 끝 부분이 기둥 위에 있거나, 또는 양쪽 끝 부분이 다른 보와 동시에 연결 되어 있는 경우 중 하나라면 정상
         if (maps.contains(new Frame(x, y - 1, 0))
                 || maps.contains(new Frame(x + 1, y - 1, 0))
@@ -131,21 +120,18 @@ public class L034_60061 {
             this.a = a;
         }
 
+        // equals가 x, y, a에 따른 동등 비교를 하도록 재정의
         @Override
-        public boolean equals(Object object) {
-            if (object == null) {
+        public boolean equals(Object obj) {
+            if (this == obj) {
                 return false;
             }
-            if (getClass() != object.getClass()) {
+            if (!(obj instanceof Frame)) {
                 return false;
             }
-            Frame frame = (Frame) object;
             // 구조물의 x, y, a 값이 같으면 같은 객체
-            if (x == frame.x && y == frame.y && a == frame.a) {
-                return true;
-            } else {
-                return false;
-            }
+            Frame other = (Frame) obj;
+            return x == other.x && y == other.y && a == other.a;
         }
     }
 
