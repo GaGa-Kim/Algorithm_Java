@@ -142,7 +142,7 @@ public class Main {
     /*
      * 산타가 이동할 방향 선택
      */
-    private static int selectSantaDirection(Santa santa) {
+    static int selectSantaDirection(Santa santa) {
         int minDistance = calculateDistance(santa.r, santa.c, rudolph.r, rudolph.c); // minDistance(산타와 루돌프 간의 거리 최솟값)
         int direction = -1; // direction(이동할 방향)
         for (int d = 0; d < 4; d++) { // 상우하좌로 이동
