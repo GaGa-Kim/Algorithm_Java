@@ -39,7 +39,7 @@ public class Main {
     /*
      * 별 찍기
      */
-    static void start(int r, int c, int n, boolean isBlank) {
+    static void star(int r, int c, int n, boolean isBlank) {
         if (isBlank) { // 공백일 경우
             for (int i = r; i < r + n; i++) {
                 for (int j = c; j < c + n; j++) {
@@ -59,9 +59,9 @@ public class Main {
         for (int i = r; i < r + n; i += size) {
             for (int j = c; j < c + n; j += size) {
                 if (count++ == 5) { // (5)번째 조각일 경우 공백으로 채워줌
-                    start(i, j, size, true);
+                    star(i, j, size, true);
                 } else { // (1, 2, 3, 4, 6, 7, 8, 9)번째 조각일 경우 재귀 형태로 n/3의 패턴으로 채워줌
-                    start(i, j, size, false);
+                    star(i, j, size, false);
                 }
             }
         }
@@ -84,7 +84,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
         init(st);
-        start(0, 0, N, false);
+        star(0, 0, N, false);
         print();
     }
 }
