@@ -41,7 +41,7 @@ public class Main {
     static TNode trie = new TNode(); // trie(개미굴 먹이 정보를 저장할 트라이 자료구조)
 
     /*
-     * TNode(전화번호 목록의 문자를 저장할 트라이 자료구조)
+     * TNode(개미굴의 먹이를 저장할 트라이 자료구조)
      */
     static class TNode {
         Map<String, TNode> cNode = new HashMap<String, TNode>(); // cNode(다음 자식 먹이 노드들)
