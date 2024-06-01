@@ -78,9 +78,6 @@ public class Main {
      * 우수 마을들의 주민 수 찾기
      */
     static int find(int start, int flag) {
-        if (town[start].size() == 0) { // 시작 마을과 인접한 마을이 없다면
-            return 0;
-        }
         if (D[start][flag] != -1) { // 이미 시작 마을을 시작으로 하여 우수 마을의 주민 수를 구했다면 다시 계산할 필요가 없음
             return D[start][flag];
         }
