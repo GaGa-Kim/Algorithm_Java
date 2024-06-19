@@ -3,8 +3,8 @@ package Baekjoon.B_21315;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 /*
@@ -102,16 +102,16 @@ public class Main {
      * 섞기 단계
      */
     static void step(int range, int count) {
-        List<Integer> tmp = new ArrayList<Integer>(); // tmp(임시 리스트)
-        for (int i = range - count; i < range; i++) { // 직전에 맨 위로 올린 카드 중 밑에서 2^(K - i + 1)개의 카드를 임시 리스트에 저장
-            tmp.add(arr[i]);
+        Queue<Integer> queue = new LinkedList<>(); // queue(단계에 따라 섞인 카드를 담은 큐)
+        for (int i = range - count; i < range; i++) { // 직전에 맨 위로 올린 카드 중 밑에서 2^(K - i + 1)개의 카드를 큐에 저장
+            queue.add(arr[i]);
             arr[i] = 0;
         }
         for (int i = 0; i < N; i++) {
-            if (arr[i] != 0) { // 임시 리스트에 존재하지 않는 수는 뽑힌 카드보다 뒤에 있어야 하므로, 리스트에 저장한 후 이후 배열의 뒤에 저장
-                tmp.add(arr[i]);
+            if (arr[i] != 0) { // 큐에 존재하지 않는 수는 뽑힌 카드보다 뒤에 있어야 하므로, 큐에 저장한 후 이후 배열의 뒤에 저장
+                queue.add(arr[i]);
             }
-            arr[i] = tmp.get(i); // 임시 리스트에 존재하는 카드의 수를 더미의 맨 위에 저장
+            arr[i] = queue.poll(); // 큐에 존재하는 카드의 수를 더미의 맨 위에 저장
         }
     }
 
