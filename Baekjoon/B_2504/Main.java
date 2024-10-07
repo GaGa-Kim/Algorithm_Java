@@ -11,7 +11,7 @@ import java.util.Stack;
  *   (()[[]])([])는 2 * (2 + (3 * 3)) + 2 * 3이며
  *   '(' temp = 1 * 2 = 2, answer = 0
  *   '(' temp = 2 * 2 = 4, answer = 0
- *   ')' temp = 4 / 2 = 2, answer = 0 + 4 = 4
+ *   ')' answer = 0 + 4 = 4, temp = 4 / 2 = 2
  *   '[' temp = 2 * 3 = 6, answer = 4
  *   '[' temp = 6 * 3 = 18, answer = 4 
  *   ']' answer = 4 + 18 = 22, temp = 18 / 3 = 6
@@ -65,17 +65,17 @@ public class Main {
         for (int i = 0; i < brackets.length; i++) {
             char c = brackets[i];
 
-            if (c == '(') {
+            if (c == '(') { // '('을 만나면 '('을 스택에 넣고 temp에 2를 곱함
                 stack.push(c);
                 temp *= 2;
-            } else if (c == '[') {
+            } else if (c == '[') { // '['을 만나면 '['을 스택에 넣고 temp에 3을 곱함
                 stack.push(c);
                 temp *= 3;
             } else if (c == ')') {
                 if (stack.isEmpty() || stack.peek() != '(') { // 입력이 올바르지 못한 괄호열이면 0을 출력
                     answer = 0;
                     break;
-                } else if (brackets[i - 1] == '(') {
+                } else if (brackets[i - 1] == '(') { // 이전 값이 '('이면 temp를 answer에 저장하고, 괄호가 닫힐 때마다 저장해둔 값들을 /2로 정리
                     answer += temp;
                 }
                 stack.pop();
@@ -84,7 +84,7 @@ public class Main {
                 if (stack.isEmpty() || stack.peek() != '[') { // 입력이 올바르지 못한 괄호열이면 0을 출력
                     answer = 0;
                     break;
-                } else if (brackets[i - 1] == '[') {
+                } else if (brackets[i - 1] == '[') { // 이전 값이 '['이면 temp를 answer에 저장하고, 괄호가 닫힐 때마다 저장해둔 값들을 /3으로 정리
                     answer += temp;
                 }
                 stack.pop();

@@ -39,7 +39,7 @@ public class Main {
     static void init(StringTokenizer st) throws IOException {
         N = Integer.parseInt(st.nextToken());
 
-        tree = new ArrayList[N];
+        tree = new ArrayList[N]; // 트리 데이터를 저장할 인접 리스트 초기화
         for (int i = 0; i < N; i++) {
             tree[i] = new ArrayList<Integer>();
         }
@@ -47,10 +47,10 @@ public class Main {
         st = new StringTokenizer(br.readLine());
         for (int node = 0; node < N; node++) { // 트리 데이터 저장
             int parent = Integer.parseInt(st.nextToken());
-            if (parent != -1) {
+            if (parent != -1) { // -1이 아닐 경우 루트 노드가 아님
                 tree[node].add(parent);
                 tree[parent].add(node);
-            } else {
+            } else { // -1일 경우 루트 노드
                 rootNode = node;
             }
         }
@@ -71,7 +71,7 @@ public class Main {
     }
 
     /*
-     * 루트 노드부터 시작해 리프 노드 개수 찾기
+     * 루트 노드부터 시작해 DFS 탐색하여 리프 노드 개수 찾기
      */
     static void countLeafNode(int node) {
         visited[node] = true;
