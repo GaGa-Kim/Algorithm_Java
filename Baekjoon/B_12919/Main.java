@@ -44,7 +44,7 @@ public class Main {
      * 문자열 변환하기
      */
     static void change(String word) {
-        if (S.length() == word.length()) { // 변환한 T가 S의 길이와 같아졌을 때 동일한 글자인지 확인
+        if (S.length() == word.length()) { // 변환한 T가 S의 길이와 같을 때 동일한 글자인지 확인
             if (S.equals(word)) {
                 canChanged = 1;
             }

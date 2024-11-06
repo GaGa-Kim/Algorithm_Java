@@ -52,7 +52,7 @@ public class Main {
     /*
      * 최단거리 찾기
      */
-    static void dikstra() {
+    static void dijkstra() {
         queue = new LinkedList<Move>();
         queue.add(new Move(N, 0));
         visited = new boolean[100001];
@@ -93,7 +93,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         StringTokenizer st = new StringTokenizer(br.readLine());
         init(st);
-        dikstra();
+        dijkstra();
         print();
     }
 }
