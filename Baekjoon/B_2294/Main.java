@@ -42,10 +42,7 @@ public class Main {
     }
 
     /*
-     * 금액 만들기3 15
-1
-5
-12
+     * 금액 만들기
      */
     static void make() {
         D = new int[K + 1];

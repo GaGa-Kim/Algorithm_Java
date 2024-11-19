@@ -10,6 +10,9 @@ import java.util.StringTokenizer;
  * 문제 분석하기
  * : 전체 인원 입국에 걸리는 시간의 최소와 최대를 이진 탐색의 인덱스로 설정한 후 
  *   이진 탐색을 하며 시간 안에 모든 인원을 처리할 수 있는지 계산함
+ *   예) 7, 10초 걸리는 심사대에서 6명이 심사가 끝나야할 경우
+ *   7초 심사대 -> 7초, 14초, 21초, 28초 
+ *   10초 심사대 -> 10초, 20초
  */
 
 /* 
@@ -26,8 +29,8 @@ import java.util.StringTokenizer;
 public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    static int N;
-    static long M;
+    static int N; // N(입국심사대의 수)
+    static long M; // M(상근이와 친구들의 수)
     static long[] times; // times(각 심사대에서 심사를 하는데 걸리는 시간)
     static long T = Long.MAX_VALUE; // T(심사를 마치는데 걸리는 시간의 최솟값)
 
@@ -72,7 +75,7 @@ public class Main {
         long count = 0; // count(입국 가능한 인원 수)
         for (int i = 0; i < N; i++) {
             count += time / times[i];
-            if (count >= M) {
+            if (count >= M) { // 주어진 시간 안에 M명 이상을 입국시킬 수 있다면
                 return true;
             }
         }
