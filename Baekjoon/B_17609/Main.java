@@ -44,11 +44,11 @@ public class Main {
         int result = 2;
 
         String rs = new StringBuilder(s).reverse().toString();
-        if (s.equals(rs)) { // 원래 문자를 뒤집은 문자와 비교해 같을 경우 0
+        if (s.equals(rs)) { // 원래 문자를 뒤집은 문자와 비교해 같을 경우 회문이므로 0
             result = 0;
         }
 
-        else { // 다른 문자가 나올 경우 이를 삭제하고 뒤집은 문자와 비교해 같을 경우 1
+        else { // 다른 문자가 나올 경우 이를 삭제하고 뒤집은 문자와 비교해 같을 경우 유사회문이므로 1
             int left = 0;
             int right = s.length() - 1;
             while (left < right) {
@@ -66,7 +66,7 @@ public class Main {
             }
         }
 
-        return result; // 둘다 아니라면 2
+        return result; // 둘다 아니라면 그 외는 2
     }
 
     /*
