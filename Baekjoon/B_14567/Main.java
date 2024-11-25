@@ -73,7 +73,7 @@ public class Main {
     static void find() {
         Queue<Subject> queue = new LinkedList<Subject>();
         for (int i = 1; i <= N; i++) {
-            if (indegree[i] == 0) { // 진입차수가 0인 과목을 큐에 삽입
+            if (indegree[i] == 0) { // 진입차수가 0인 과목(이수 과목을 듣지 않아도 되는 과목)을 큐에 삽입
                 queue.add(new Subject(i, 1));
                 semesters[i] = 1;
             }
@@ -81,9 +81,9 @@ public class Main {
 
         while (!queue.isEmpty()) {
             Subject now = queue.poll();
-            for (int next : arr[now.id]) { // 해당 선수과목과 연결된 다음 과목을 살펴보기
+            for (int next : arr[now.id]) { // 해당 선수과목과 연결된 다음 과목(해당 과목을 이수한 후 들을 수 있는 과목)을 살펴보기
                 indegree[next]--;
-                if (indegree[next] == 0) { // 새롭게 진입차수가 0이 되는 과목을 큐에 삽입
+                if (indegree[next] == 0) { // 새롭게 진입차수가 0이 되는 과목(앞선 이수 과목을 모두 들은 과목)을 큐에 삽입
                     queue.add(new Subject(next, now.semester + 1));
                     semesters[next] = now.semester + 1;
                 }
