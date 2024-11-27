@@ -78,7 +78,7 @@ public class Main {
         int usedEdge = 0; // usedEdge(사용한 간선의 개수)
         while (usedEdge < V - 1) {
             Edge now = pq.poll();
-            if (find(now.start) != find(now.end)) { // 사이클이 발생하지 않을 경우 연결
+            if (find(now.start) != find(now.end)) { // 사이클이 발생하지 않을 경우 연결 (같은 집합이 아니라면)
                 union(now.start, now.end);
                 answer += now.value;
                 usedEdge++;

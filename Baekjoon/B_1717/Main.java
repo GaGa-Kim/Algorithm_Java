@@ -13,8 +13,8 @@ import java.util.StringTokenizer;
 
 /* 
  * 손으로 풀어보기
- * 1. 0일 경우, 두 원소의 대표 노드를 찾아 합치도록 함
- * 2. 1일 경우, 두 원소의 대표 노드값이 같다면 YES, 아니라면 NO를 출력함
+ * 1. 0일 경우, 두 원소의 대표 노드를 찾아 합치도록 함 (union 연산)
+ * 2. 1일 경우, 두 원소의 대표 노드값이 같다면 YES, 아니라면 NO를 출력함 (find 연산)
  */
 
 /*
@@ -51,7 +51,7 @@ public class Main {
             if (commend == 0) { // 합집합 연산일 경우
                 union(a, b);
             } else { // 두 원소가 같은 집합에 포함되었는지 확인하는 연산일 경우
-                if (find(a) == find(b)) {
+                if (find(a) == find(b)) { // 두 원소의 대표 노드값이 같다면 같은 집합
                     print("YES");
                 } else {
                     print("NO");
