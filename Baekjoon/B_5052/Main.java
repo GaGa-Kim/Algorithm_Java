@@ -47,7 +47,7 @@ public class Main {
             for (int i = 0; i < word.length(); i++) { // 첫 문자부터 마지막 문자까지 노드를 내려가며 저장
                 char c = word.charAt(i);
 
-                tNode.CNode.putIfAbsent(c, new TNode()); // 만약 자식 노드에 c 문자가 없다면 추가한 후
+                tNode.CNode.putIfAbsent(c, new TNode()); // 만약 자식 노드에 c 문자가 없다면 추가
                 tNode = tNode.CNode.get(c); // 이를 다음 노드로 사용
 
                 if (i == word.length() - 1) { // 마지막 문자라면 마지막 문자열 여부 표시
@@ -66,7 +66,7 @@ public class Main {
                 char c = word.charAt(i);
 
                 TNode node = tNode.CNode.get(c);
-                if (node == null) { // 중간에 같은 문자열이 아닐 경우
+                if (node == null) { // 중간에 같은 문자열이 없을 경우
                     return false;
                 }
                 tNode = node;
