@@ -63,7 +63,7 @@ public class Main {
      */
     static void find() {
         Stack<Top> stack = new Stack<Top>();
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++) { // 6, 9, 5, 7, 4 순으로 스택에 넣음
             while (!stack.isEmpty()) { // 스택이 비어있지 않다면 수신할 탑이 있는지 확인
                 if (stack.peek().height > tops[i].height) { // 스택의 맨 윗부분 탑의 높이가 지금 들어오는 탑의 높이보다 크다면
                     answer[i] = stack.peek().index; // 이 탑으로 수신 가능

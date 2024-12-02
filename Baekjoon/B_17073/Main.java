@@ -55,7 +55,7 @@ public class Main {
      */
     static void find_leaf() {
         for (int i = 2; i <= N; i++) {
-            if (tree[i].size() == 1) { // 루트 노드를 제외하고, 연결된 간선이 하나인 노드라면 리프 노드
+            if (tree[i].size() == 1) { // 루트 노드(i = 1)를 제외하고, 연결된 간선이 하나인 노드라면 리프 노드
                 leaf_count++;
             }
         }
