@@ -14,10 +14,9 @@ import java.util.StringTokenizer;
 
 /* 
  * 손으로 풀어보기
- * 1. 수업에 따른 강의실 배정 준비하기
- * 2. 강의 시작 시간을 기준으로 정렬. 만약 시작 시간이 같을 경우 종료 시간이 빠른 순으로 정렬
- * 3. 앞 수업의 종료 시간보다 다음 수업의 시작 시간이 빠를 경우 강의실을 증가시켜주도록 함
- * 4. 사용할 수 있는 최소 강의실의 개수 출력
+ * 1. 강의 시작 시간을 기준으로 정렬. 만약 시작 시간이 같을 경우 종료 시간이 빠른 순으로 정렬
+ * 2. 앞 수업의 종료 시간보다 다음 수업의 시작 시간이 빠를 경우, 강의실이 더 필요하므로 강의실을 증가시켜주도록 함
+ * 3. 사용할 수 있는 최소 강의실의 개수 출력
  */
 
 /*
@@ -34,8 +33,8 @@ public class Main {
      * Class(수업 정보를 담은 클래스)
      */
     static class Class implements Comparable<Class> {
-        int start;
-        int end;
+        int start; // start(강의 시작 시간)
+        int end; // end(강의 종료 시간)
 
         public Class(int start, int end) {
             this.start = start;
@@ -44,10 +43,10 @@ public class Main {
 
         @Override
         public int compareTo(Class o) {
-            if (this.start != o.start) {
+            if (this.start != o.start) { // 강의 시작 시간 오름차순 정렬
                 return Integer.compare(this.start, o.start);
             }
-            return Integer.compare(this.end, o.end);
+            return Integer.compare(this.end, o.end); // 강의 종료 시간 오름차순 정렬
         }
     }
 
@@ -84,7 +83,7 @@ public class Main {
             if (c.start >= pq.peek()) {
                 pq.poll(); // 다음 수업의 시작 시간이 이전 수업의 종료 시간보다 뒤일 경우, 같은 강의실에서 수업이 가능하므로 이전 수업을 제거하고 다음 수업을 넣어줌
             }
-            pq.add(c.end); // 다음 수업의 시작 시간이 이전 수업의 종료 시간보다 앞일 경우, 같은 강의실에서 수업이 불가능하므로 이전 수업을 놔두고 다음 수업을 넣어줌
+            pq.add(c.end); // 다음 수업의 시작 시간이 이전 수업의 종료 시간보다 앞일 경우, 같은 강의실에서 수업이 불가능하므로 이전 수업을 놔두고 강의실 수를 늘려 다음 수업을 넣어줌
         }
     }
 

@@ -26,14 +26,17 @@ public class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     static int N;
-    static Pair[] counsels; // counsels(상담 기간과 금액을 담은 배열)
-    static int[] D; // D(각 날짜의 최대 이익)
+    static Counsel[] counsels; // counsels(상담 기간과 금액을 담은 배열)
+    static int[] D; // D(각 날짜의 최대 이익을 담은 DP 테이블)
 
-    static class Pair {
-        int T;
-        int P;
+    /*
+     * Counsel(상담 정보를 담은 클래스)
+     */
+    static class Counsel {
+        int T; // T(상담을 완료하는데 걸리는 기간)
+        int P; // P(상담을 했을 때 받을 수 있는 금액)
 
-        public Pair(int T, int P) {
+        public Counsel(int T, int P) {
             this.T = T;
             this.P = P;
         }
@@ -45,14 +48,14 @@ public class Main {
     static void init(StringTokenizer st) throws IOException {
         N = Integer.parseInt(st.nextToken());
 
-        counsels = new Pair[N + 2];
+        counsels = new Counsel[N + 2];
         for (int i = 1; i <= N; i++) { // 1 ~ N일 동안의 상담 정보 저장
             st = new StringTokenizer(br.readLine());
             int T = Integer.parseInt(st.nextToken());
             int P = Integer.parseInt(st.nextToken());
-            counsels[i] = new Pair(T, P);
+            counsels[i] = new Counsel(T, P);
         }
-        counsels[N + 1] = new Pair(0, 0); // 퇴사 일(N + 1)의 상담 정보 저장
+        counsels[N + 1] = new Counsel(0, 0); // 퇴사 일(N + 1)의 상담 정보 저장
     }
 
     /*
